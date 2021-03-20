@@ -1,4 +1,4 @@
-## Homework Assignment1
+## Homework Assignment 1
 
 ![](https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png)
 
