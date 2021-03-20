@@ -4,18 +4,16 @@
 
 
 ```matlab
-clc;
-clear;
-
-% Problem 1
+%% Problem 1
 
 %A = imread('./data/banana_slug.cr2');
 A = imread('./data/banana_slug.tiff');
 class(A)
 size(A)
 trans_A = double(A);
+```
 
-
+```matlab
 %% Problem 2
 
 % 0 - 16383 => 2047 - 15000
@@ -31,9 +29,9 @@ new_A = min(new_A, max_A);
 new_trans_A = (new_A - 2047)/(15000 - 2047);
 figure(1)
 imshow(new_trans_A)
+```
 
-
-
+```matlab
 %% Problem 3
 
 im1=new_trans_A(1:2:end, 1:2:end); %R
@@ -65,9 +63,9 @@ figure; imshow(min(1, im_rggb * 5));
 %bB = demosaic(new_trans_A, 'rggb');
 %bC = demosaic(new_trans_A, 'bggr');
 %bD = demosaic(new_trans_A, 'gbrg');
+```
 
-
-
+```matlab
 %% Problem 4
 
 grey_r = mean(mean(im_rggb(:,:,1)));
@@ -81,9 +79,9 @@ im_whiteworld = cat(3,im_rggb(:,:,1)*(white_g/white_r), im_rggb(:,:,2), im_rggb(
 
 figure; imshow(im_greyworld);
 figure; imshow(im_whiteworld);
+```
 
-
-
+```matlab
 %% Problem 5
 
 di_r = interp2(im_whiteworld(:,:,1));
@@ -91,9 +89,9 @@ di_g = interp2(im_whiteworld(:,:,2));
 di_b = interp2(im_whiteworld(:,:,3));
 im_di = cat(3, di_r, di_g, di_b);
 figure; imshow(im_di);
+```
 
-
-
+```matlab
 %% Problem 6
 
 if im_di < 0.0031308
@@ -102,9 +100,9 @@ else
     c_non = (1+0.055)*(im_di.^(1/2.4)) - 0.055;
 end
 figure; imshow(c_non);
+```
 
-
-
+```matlab
 %% Problem 7
 
 imwrite(c_non, 'A.png');
