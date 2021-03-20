@@ -112,7 +112,5 @@ imwrite(c_non, 'A_20.jpeg', 'quality', 20);
 imwrite(c_non, 'A_15.jpeg', 'quality', 15);
 imwrite(c_non, 'A_10.jpeg', 'quality', 10);
 imwrite(c_non, 'A_5.jpeg', 'quality', 5);
-
-
 ```
 
