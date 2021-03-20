@@ -106,7 +106,7 @@ figure; imshow(c_non);
 %% Problem 7
 
 imwrite(c_non, 'A.png');
-imwrite(c_non, 'A_90.jpeg', 'quality', 90);
+imwrite(c_non, 'A_95.jpeg', 'quality', 95);
 imwrite(c_non, 'A_50.jpeg', 'quality', 50);
 imwrite(c_non, 'A_30.jpeg', 'quality', 30);
 imwrite(c_non, 'A_15.jpeg', 'quality', 15);
