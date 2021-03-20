@@ -1,5 +1,7 @@
 ## Homework Assignment1
 
+![](https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png)
+
 
 ```matlab
 clc;
