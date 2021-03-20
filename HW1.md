@@ -1,6 +1,6 @@
 ## Homework Assignment 1
 
-![](https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png){: width="100" height="100"}
+![](https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png)
 
 
 ```matlab
