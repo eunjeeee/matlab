@@ -6,16 +6,12 @@ clc;
 clear;
 
 % Problem 1
+
 %A = imread('./data/banana_slug.cr2');
 A = imread('./data/banana_slug.tiff');
 class(A)
 size(A)
 trans_A = double(A);
-%imshow(A)
-
-%min(min(trans_A))
-%max(max(trans_A))
-
 
 
 %% Problem 2
@@ -63,13 +59,10 @@ imshow(im_gbrg)
 figure; imshow(min(1, im_rggb * 5));
 
 %new_trans_A = uint8(new_trans_A*256);
-% ‘grbg’, ‘rggb’, ‘bggr’, ‘gbrg’
-%figure(2)
 %bA = demosaic(new_trans_A, 'grbg');
 %bB = demosaic(new_trans_A, 'rggb');
 %bC = demosaic(new_trans_A, 'bggr');
 %bD = demosaic(new_trans_A, 'gbrg');
-
 
 
 
@@ -88,6 +81,7 @@ figure; imshow(im_greyworld);
 figure; imshow(im_whiteworld);
 
 
+
 %% Problem 5
 
 di_r = interp2(im_whiteworld(:,:,1));
@@ -95,6 +89,7 @@ di_g = interp2(im_whiteworld(:,:,2));
 di_b = interp2(im_whiteworld(:,:,3));
 im_di = cat(3, di_r, di_g, di_b);
 figure; imshow(im_di);
+
 
 
 %% Problem 6
