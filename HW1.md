@@ -6,6 +6,7 @@
 original image (banana_slug.tiff)
   
 ### INITIALS
+Load image, class, size, double
 ```matlab
 %% Problem 1
 
@@ -15,8 +16,12 @@ class(A)
 size(A)
 trans_A = double(A);
 ```
+- bits per integer the image = uint16
+- size = 2856, 4290
+- convert the image into a double-precision array
 
 ### LINEARIZATION
+value for pixels 2047 -> 0, value 15000 -> 1 로 매핑하기 (min, max)
 ```matlab
 %% Problem 2
 
@@ -31,8 +36,6 @@ new_A = max(trans_A, min_A);
 new_A = min(new_A, max_A);
 
 new_trans_A = (new_A - 2047)/(15000 - 2047);
-figure(1)
-imshow(new_trans_A)
 ```
 
 <p align='center'>
@@ -75,9 +78,6 @@ white_r = max(max(im_rggb(:,:,1)));
 white_g = max(max(im_rggb(:,:,2)));
 white_b = max(max(im_rggb(:,:,3)));
 im_whiteworld = cat(3,im_rggb(:,:,1)*(white_g/white_r), im_rggb(:,:,2), im_rggb(:,:,3)*(white_g/white_b));
-
-figure; imshow(im_greyworld);
-figure; imshow(im_whiteworld);
 ```
 
 <p align='center'>
@@ -92,7 +92,6 @@ di_r = interp2(im_whiteworld(:,:,1));
 di_g = interp2(im_whiteworld(:,:,2));
 di_b = interp2(im_whiteworld(:,:,3));
 im_di = cat(3, di_r, di_g, di_b);
-figure; imshow(im_di);
 ```
 
 <p align='center'>
@@ -108,7 +107,6 @@ if im_di < 0.0031308
 else 
     c_non = (1+0.055)*(im_di.^(1/2.4)) - 0.055;
 end
-figure; imshow(c_non);
 ```
 
 <p align='center'>
@@ -116,6 +114,7 @@ figure; imshow(c_non);
 
 
 ### COMPRESSION
+compression ratio (.PNG / .JPEG quality setting 5 ~ 95)
 ```matlab
 %% Problem 7
 
@@ -128,10 +127,22 @@ imwrite(c_non, 'A_10.jpeg', 'quality', 10);
 imwrite(c_non, 'A_5.jpeg', 'quality', 5);
 ```
 
-<p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_png.PNG' width="800px">
+
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_png.PNG' width="800px"> <br/>
   
+  - white balancing(grey world, white world) 비교 <br/>
+    - 원본 cr2 사진과 비교하였을 때, grey world white balancing보다 white world white balancing이 더 좋음을 볼 수 있다.<br/>
+  - PNG(no compression), JPEG(compression) <br/>
+    - .PNG = 14,439,587 byte  <br/>
+    - .JPEG(q;95) = 2,679,370 byte <br/>
+    - compression ratio = 0.18556 <br/>
   
-  
-<p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.PNG' width="800px">
+
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.PNG' width="800px"> <br/>
+  <compression ratio> <br/>
+  quality 5 : 0.0154<br/>
+  quality 10 : 0.0189<br/>
+  quality 15 : 0.0222<br/>
+  quality 30 : 0.0313<br/>
+  quality 50 : 0.0421<br/>
+  quality 95 : 0.0186    
