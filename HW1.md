@@ -1,8 +1,9 @@
-## Homework Assignment 1
+# Homework Assignment 1
 
 <p align='center'>
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png' width="600px">
 
+### INITIALS
 ```matlab
 %% Problem 1
 
@@ -13,6 +14,7 @@ size(A)
 trans_A = double(A);
 ```
 
+### LINEARIZATION
 ```matlab
 %% Problem 2
 
@@ -31,6 +33,7 @@ figure(1)
 imshow(new_trans_A)
 ```
 
+### BAYER PATTERN
 ```matlab
 %% Problem 3
 
@@ -57,14 +60,9 @@ subplot(2,2,4)
 imshow(im_gbrg)
 
 figure; imshow(min(1, im_rggb * 5));
-
-%new_trans_A = uint8(new_trans_A*256);
-%bA = demosaic(new_trans_A, 'grbg');
-%bB = demosaic(new_trans_A, 'rggb');
-%bC = demosaic(new_trans_A, 'bggr');
-%bD = demosaic(new_trans_A, 'gbrg');
 ```
 
+### WHITE BALANCING
 ```matlab
 %% Problem 4
 
@@ -81,6 +79,7 @@ figure; imshow(im_greyworld);
 figure; imshow(im_whiteworld);
 ```
 
+### DEMOSAICING
 ```matlab
 %% Problem 5
 
@@ -91,6 +90,7 @@ im_di = cat(3, di_r, di_g, di_b);
 figure; imshow(im_di);
 ```
 
+### GAMMA CORRECTION
 ```matlab
 %% Problem 6
 
@@ -102,6 +102,7 @@ end
 figure; imshow(c_non);
 ```
 
+### COMPRESSION
 ```matlab
 %% Problem 7
 
