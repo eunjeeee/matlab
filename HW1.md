@@ -131,15 +131,15 @@ imwrite(c_non, 'A_5.jpeg', 'quality', 5);
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_png.PNG' width="800px"> <br/>
   
   - white balancing(grey world, white world) 비교 <br/>
-    - 원본 cr2 사진과 비교하였을 때, grey world white balancing보다 white world white balancing이 더 좋음을 볼 수 있다.<br/>
+    - 원본 cr2 사진과 비교하였을 때, grey world white balancing보다 white world white balancing이 더 좋음을 볼 수 있다.<br/><br/>
   - PNG(no compression), JPEG(compression) <br/>
-    - .PNG = 14,439,587 byte  <br/>
-    - .JPEG(q;95) = 2,679,370 byte <br/>
+    - **.PNG** = 14,439,587 byte  <br/>
+    - **.JPEG(q;95)** = 2,679,370 byte <br/>
     - compression ratio = 0.18556 <br/>
   
 
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.PNG' width="800px"> <br/>
-  <compression ratio> <br/>
+  **<compression ratio>** <br/>
   - **quality 5** : 0.0154<br/>
   - **quality 10** : 0.0189<br/>
   - **quality 15** : 0.0222<br/>
