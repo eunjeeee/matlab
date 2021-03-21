@@ -1,8 +1,10 @@
 # Homework Assignment 1
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png' width="600px">
-
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/banana_slug.tiff.PNG' width="600px">
+<p align='center'>
+original image (banana_slug.tiff)
+  
 ### INITIALS
 ```matlab
 %% Problem 1
