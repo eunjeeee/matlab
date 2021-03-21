@@ -1,7 +1,7 @@
 ## Homework Assignment 1
 
-![](https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png)
-
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A.png' width="600px">
 
 ```matlab
 %% Problem 1
