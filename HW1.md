@@ -129,7 +129,7 @@ imwrite(c_non, 'A_5.jpeg', 'quality', 5);
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_png.png' width="600px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_png.PNG' width="600px">
   
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.png' width="600px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.PNG' width="600px">
