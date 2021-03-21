@@ -35,6 +35,10 @@ figure(1)
 imshow(new_trans_A)
 ```
 
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P2.png' width="600px">
+
+
 ### BAYER PATTERN
 ```matlab
 %% Problem 3
