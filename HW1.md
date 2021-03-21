@@ -54,19 +54,14 @@ im_grbg = cat(3, im2, im1, im3);
 im_rggb = cat(3, im1, im2, im4); 
 im_bggr = cat(3, im4, im2, im1); 
 im_gbrg = cat(3, im3, im1, im2); 
-
-figure(2)
-subplot(2,2,1)
-imshow(im_grbg)
-subplot(2,2,2)
-imshow(im_rggb)
-subplot(2,2,3)
-imshow(im_bggr)
-subplot(2,2,4)
-imshow(im_gbrg)
-
-figure; imshow(min(1, im_rggb * 5));
 ```
+
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3.PNG'>
+  
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3_intermediate.png' width="600px">
+
 
 ### WHITE BALANCING
 ```matlab
@@ -85,6 +80,10 @@ figure; imshow(im_greyworld);
 figure; imshow(im_whiteworld);
 ```
 
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P4.PNG' width="500px">
+
+
 ### DEMOSAICING
 ```matlab
 %% Problem 5
@@ -95,6 +94,10 @@ di_b = interp2(im_whiteworld(:,:,3));
 im_di = cat(3, di_r, di_g, di_b);
 figure; imshow(im_di);
 ```
+
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P5.png' width="600px">
+
 
 ### GAMMA CORRECTION
 ```matlab
@@ -107,6 +110,10 @@ else
 end
 figure; imshow(c_non);
 ```
+
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P6.png' width="600px">
+
 
 ### COMPRESSION
 ```matlab
@@ -121,3 +128,8 @@ imwrite(c_non, 'A_10.jpeg', 'quality', 10);
 imwrite(c_non, 'A_5.jpeg', 'quality', 5);
 ```
 
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_png.png' width="600px">
+  
+<p align='center'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.png' width="600px">
