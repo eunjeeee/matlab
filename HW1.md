@@ -1,7 +1,9 @@
 # Homework Assignment 1
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/banana_slug.tiff.PNG' width="600px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/banana_slug.tiff.PNG' width="300px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A_95.jpeg' width="300px">
+  
 <p align='center'>
 original image (banana_slug.tiff)
   
