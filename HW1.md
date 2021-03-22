@@ -5,7 +5,7 @@
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A_95.jpeg' width="300px">
   
 <p align='center'>
-original image (banana_slug.tiff) 와 final image (.PNG;no compression)
+**original image (banana_slug.tiff)** 와 **final image (.PNG;no compression)**
   
 ### INITIALS
 Load image, class, size, double
