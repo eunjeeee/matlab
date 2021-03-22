@@ -12,7 +12,7 @@
 </p>
 
 ### INITIALS
-<p>- Load image, class, size, double</p>
+- Load image, class, size, double
 
 ```matlab
 %% Problem 1
