@@ -5,7 +5,7 @@
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A_95.jpeg' width="300px">
   
 <p align='center'>
-**original image (banana_slug.tiff)** 와 **final image (.PNG;no compression)**
+original image (banana_slug.tiff) 와 final image (.PNG;no compression)
   
 ### INITIALS
 Load image, class, size, double
@@ -63,10 +63,13 @@ im_gbrg = cat(3, im3, im1, im2);
 
 <p align='center'>
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3.PNG'>
-  
+<p align='left'>
+- grbg, rggb, bggr, gbrg bayer pattern을 각각 적용해 비교
+
 <p align='center'>
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3_intermediate.png' width="300px">
-
+<p align='left'>
+- 그 중 rggb 패턴을 적용하여 나온 사진에 intermediate * 5 를 적용한 결과
 
 ### WHITE BALANCING
 ```matlab
