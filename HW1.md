@@ -1,7 +1,7 @@
 # Homework Assignment 1
 
 <p align='right'>
-  "2021314078 배은지"
+  2021314078 배은지
 </p>
 
 
