@@ -168,7 +168,7 @@ imwrite(c_non, 'A_95.jpeg', 'quality', 95);
     - compression ratio = 0.18556 <br/>
   
 
-  <img src='./image/P7_jpeg.PNG' width="800px"> <br/>
+  <img src='./image/P7_jpeg.PNG' width="800px"> <br/> 
   - **changing the JPEG quality settings** <br/>
     - **quality 5 (222,342 byte)** : 0.0154<br/>
     - **quality 10 (273,577 byte)** : 0.0189<br/>
