@@ -72,16 +72,14 @@ im_bggr = cat(3, im4, im2, im1);
 im_gbrg = cat(3, im3, im1, im2); 
 ```
 
-<p align='left'>
-  - grbg, rggb, bggr, gbrg bayer pattern을 각각 적용해 비교
-</p>
+- grbg, rggb, bggr, gbrg bayer pattern을 각각 적용해 비교
+
 <p align='center'>
   <img src='./image/P3.PNG'>
 </p>
 
-<p align='left'>
-  - 그 중 rggb 패턴을 적용하여 나온 사진에 intermediate * 5 를 적용한 결과
-</p>
+- 그 중 rggb 패턴을 적용하여 나온 사진에 intermediate * 5 를 적용한 결과
+
 <p align='center'>
   <img src='./image/P3_intermediate.png' width="300px">
 </p>
