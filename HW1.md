@@ -5,7 +5,7 @@
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A_95.jpeg' width="300px">
   
 <p align='center'>
-original image (banana_slug.tiff)
+original image (banana_slug.tiff) 와 final image (.PNG;no compression)
   
 ### INITIALS
 Load image, class, size, double
@@ -41,7 +41,7 @@ new_trans_A = (new_A - 2047)/(15000 - 2047);
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P2.png' width="600px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P2.png' width="300px">
 
 
 ### BAYER PATTERN
@@ -65,7 +65,7 @@ im_gbrg = cat(3, im3, im1, im2);
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3.PNG'>
   
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3_intermediate.png' width="600px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3_intermediate.png' width="300px">
 
 
 ### WHITE BALANCING
@@ -97,7 +97,7 @@ im_di = cat(3, di_r, di_g, di_b);
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P5.png' width="600px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P5.png' width="300px">
 
 
 ### GAMMA CORRECTION
@@ -112,7 +112,7 @@ end
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P6.png' width="600px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P6.png' width="300px">
 
 
 ### COMPRESSION
