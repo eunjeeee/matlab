@@ -50,6 +50,7 @@ new_trans_A = (new_A - 2047)/(15000 - 2047);
 - green값이 일반적으로 red나 blue에 비해 intensity data를 많이 가지고 있다고 함
 - bayer pattern에서 red, blue보다 green을 많이 샘플링함
 
+
 ```matlab
 %% Problem 3
 
