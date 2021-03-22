@@ -7,7 +7,7 @@
 </p>
 
 ### INITIALS
-- Load image, class, size, double
+<p>- Load image, class, size, double</p>
 ```matlab
 %% Problem 1
 
@@ -22,7 +22,7 @@ trans_A = double(A);
 - convert the image into a double-precision array
 
 ### LINEARIZATION
-- value for pixels 2047 -> 0, value 15000 -> 1 로 매핑하기 (min, max)
+<p>- value for pixels 2047 -> 0, value 15000 -> 1 로 매핑하기 (min, max)</p>
 ```matlab
 %% Problem 2
 
