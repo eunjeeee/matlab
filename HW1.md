@@ -3,7 +3,7 @@
 <p align='center'>
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/banana_slug.tiff.PNG' width="300px">
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A_95.jpeg' width="300px">
-  <p>original image (banana_slug.tiff) 와 final image (.PNG no compression)</p>
+  <p align='center'>original image (banana_slug.tiff) 와 final image (.PNG no compression)</p>
 </p>
 
 ### INITIALS
