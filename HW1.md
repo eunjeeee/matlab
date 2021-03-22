@@ -160,4 +160,4 @@ imwrite(c_non, 'A_95.jpeg', 'quality', 95);
   - **quality 15** : 0.0222<br/>
   - **quality 30** : 0.0313<br/>
   - **quality 50** : 0.0421<br/>
-  - **quality 95** : 0.0186    
+  - **quality 95** : 0.1856    
