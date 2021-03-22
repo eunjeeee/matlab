@@ -8,7 +8,7 @@
 original image (banana_slug.tiff) 와 final image (.PNG;no compression)
   
 ### INITIALS
-Load image, class, size, double
+- Load image, class, size, double
 ```matlab
 %% Problem 1
 
@@ -23,7 +23,7 @@ trans_A = double(A);
 - convert the image into a double-precision array
 
 ### LINEARIZATION
-value for pixels 2047 -> 0, value 15000 -> 1 로 매핑하기 (min, max)
+- value for pixels 2047 -> 0, value 15000 -> 1 로 매핑하기 (min, max)
 ```matlab
 %% Problem 2
 
@@ -97,7 +97,7 @@ im_whiteworld = cat(3,im_rggb(:,:,1)*(white_g/white_r), im_rggb(:,:,2), im_rggb(
 
 ### DEMOSAICING
 - 동일 해상도의 r,g,b를 복원하고자 함
-u- interp2 function 사용
+- interp2 function 사용
 ```matlab
 %% Problem 5
 
@@ -129,7 +129,7 @@ end
 
 
 ### COMPRESSION
-compression ratio (.PNG / .JPEG quality setting 5 ~ 95)
+- compression ratio (.PNG / .JPEG quality setting 5 ~ 95)
 ```matlab
 %% Problem 7
 
