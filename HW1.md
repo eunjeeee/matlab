@@ -154,7 +154,7 @@ imwrite(c_non, 'A_95.jpeg', 'quality', 95);
   
 
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.PNG' width="800px"> <br/>
-  **<compression ratio>** <br/>
+-changing the JPEG quality settings <br/>
   - **quality 5 (222,342 byte)** : 0.0154<br/>
   - **quality 10 (273,577 byte)** : 0.0189<br/>
   - **quality 15 (321,151 byte)** : 0.0222<br/>
