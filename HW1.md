@@ -1,5 +1,7 @@
 # Homework Assignment 1
 
+#### 2021314078 배은지
+
 <p align='center'>
   <img src='./image/banana_slug.tiff.PNG' width="300px">
   <img src='./compression/A_95.jpeg' width="300px">
