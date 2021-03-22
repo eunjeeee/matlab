@@ -1,6 +1,9 @@
 # Homework Assignment 1
 
-#### 2021314078 배은지
+<p align='right'>
+  2021314078 배은지
+</p>
+
 
 <p align='center'>
   <img src='./image/banana_slug.tiff.PNG' width="300px">
