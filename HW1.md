@@ -3,10 +3,10 @@
 <p align='center'>
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/banana_slug.tiff.PNG' width="300px">
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/compression/A_95.jpeg' width="300px">
-  
+</p>  
 <p align='center'>
 original image (banana_slug.tiff) 와 final image (.PNG;no compression)
-  
+</p>
 ### INITIALS
 - Load image, class, size, double
 ```matlab
@@ -42,7 +42,7 @@ new_trans_A = (new_A - 2047)/(15000 - 2047);
 
 <p align='center'>
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P2.png' width="300px">
-
+</p>
 
 ### BAYER PATTERN
 - green값이 일반적으로 red나 blue에 비해 intensity data를 많이 가지고 있다고 함
@@ -63,14 +63,14 @@ im_bggr = cat(3, im4, im2, im1);
 im_gbrg = cat(3, im3, im1, im2); 
 ```
 <p align='left'>
-- grbg, rggb, bggr, gbrg bayer pattern을 각각 적용해 비교
+- grbg, rggb, bggr, gbrg bayer pattern을 각각 적용해 비교</p>
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3.PNG'>
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3.PNG'></p>
 
 <p align='left'>
-- 그 중 rggb 패턴을 적용하여 나온 사진에 intermediate * 5 를 적용한 결과
+- 그 중 rggb 패턴을 적용하여 나온 사진에 intermediate * 5 를 적용한 결과</p>
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3_intermediate.png' width="300px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3_intermediate.png' width="300px"></p>
 
 
 ### WHITE BALANCING
@@ -92,7 +92,7 @@ im_whiteworld = cat(3,im_rggb(:,:,1)*(white_g/white_r), im_rggb(:,:,2), im_rggb(
 - 옷 줄무늬의 흰 부분을 보았을 때 두 결과의 톤 차이를 조금 명확히 비교할 수 있음 
 - white world automatic white balancing 이 더 좋다 판단
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P4.PNG' width="500px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P4.PNG' width="500px"></p>
 
 
 ### DEMOSAICING
@@ -108,7 +108,7 @@ im_di = cat(3, di_r, di_g, di_b);
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P5.png' width="300px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P5.png' width="300px"></p>
 
 
 ### BRIGHTNESS ADJUSTMENT AND GAMMA CORRECTION
@@ -125,7 +125,7 @@ end
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P6.png' width="300px">
+  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P6.png' width="300px"></p>
 
 
 ### COMPRESSION
