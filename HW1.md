@@ -45,6 +45,8 @@ new_trans_A = (new_A - 2047)/(15000 - 2047);
 
 
 ### BAYER PATTERN
+- green값이 일반적으로 red나 blue에 비해 intensity data를 많이 가지고 있다고 함
+- bayer pattern에서 red, blue보다 green을 많이 샘플링함
 ```matlab
 %% Problem 3
 
@@ -72,6 +74,9 @@ im_gbrg = cat(3, im3, im1, im2);
 
 
 ### WHITE BALANCING
+- grey world, white world 두 방법으로 automatic white balancing을 함
+- grey world assumption : 전체 씬의 평균 색을 grey로 둠
+- white world assumption : 가장 밝은 픽셀(max)을 white로 둠
 ```matlab
 %% Problem 4
 
@@ -84,12 +89,15 @@ white_g = max(max(im_rggb(:,:,2)));
 white_b = max(max(im_rggb(:,:,3)));
 im_whiteworld = cat(3,im_rggb(:,:,1)*(white_g/white_r), im_rggb(:,:,2), im_rggb(:,:,3)*(white_g/white_b));
 ```
-
+- 옷 줄무늬의 흰 부분을 보았을 때 두 결과의 톤 차이를 조금 명확히 비교할 수 있음 
+- white world automatic white balancing 이 더 좋다 판단
 <p align='center'>
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P4.PNG' width="500px">
 
 
 ### DEMOSAICING
+- 동일 해상도의 r,g,b를 복원하고자 함
+u- interp2 function 사용
 ```matlab
 %% Problem 5
 
@@ -103,7 +111,9 @@ im_di = cat(3, di_r, di_g, di_b);
   <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P5.png' width="300px">
 
 
-### GAMMA CORRECTION
+### BRIGHTNESS ADJUSTMENT AND GAMMA CORRECTION
+- image는 displays에서 non-linear하기 때문에 명암 차이가 커짐
+- gamma correction은 이 non-linear한 특성을 linear하게 바꿈
 ```matlab
 %% Problem 6
 
@@ -124,12 +134,12 @@ compression ratio (.PNG / .JPEG quality setting 5 ~ 95)
 %% Problem 7
 
 imwrite(c_non, 'A.png');
-imwrite(c_non, 'A_95.jpeg', 'quality', 95);
-imwrite(c_non, 'A_50.jpeg', 'quality', 50);
-imwrite(c_non, 'A_30.jpeg', 'quality', 30);
-imwrite(c_non, 'A_15.jpeg', 'quality', 15);
-imwrite(c_non, 'A_10.jpeg', 'quality', 10);
 imwrite(c_non, 'A_5.jpeg', 'quality', 5);
+imwrite(c_non, 'A_10.jpeg', 'quality', 10);
+imwrite(c_non, 'A_15.jpeg', 'quality', 15);
+imwrite(c_non, 'A_30.jpeg', 'quality', 30);
+imwrite(c_non, 'A_50.jpeg', 'quality', 50);
+imwrite(c_non, 'A_95.jpeg', 'quality', 95);
 ```
 
 
