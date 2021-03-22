@@ -1,8 +1,8 @@
 # Homework Assignment 1
 
 <p align='center'>
-  <img src='image/banana_slug.tiff.PNG' width="300px">
-  <img src='compression/A_95.jpeg' width="300px">
+  <img src='./image/banana_slug.tiff.PNG' width="300px">
+  <img src='./compression/A_95.jpeg' width="300px">
   <p align='center'>original image (banana_slug.tiff) 와 final image (.PNG no compression)</p>
 </p>
 
