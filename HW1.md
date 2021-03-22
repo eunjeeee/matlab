@@ -43,7 +43,7 @@ new_trans_A = (new_A - 2047)/(15000 - 2047);
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P2.png' width="300px">
+  <img src='./image/P2.png' width="300px">
 </p>
 
 ### BAYER PATTERN
@@ -71,14 +71,14 @@ im_gbrg = cat(3, im3, im1, im2);
   - grbg, rggb, bggr, gbrg bayer pattern을 각각 적용해 비교
 </p>
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3.PNG'>
+  <img src='./image/P3.PNG'>
 </p>
 
 <p align='left'>
   - 그 중 rggb 패턴을 적용하여 나온 사진에 intermediate * 5 를 적용한 결과
 </p>
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P3_intermediate.png' width="300px">
+  <img src='./image/P3_intermediate.png' width="300px">
 </p>
 
 ### WHITE BALANCING
@@ -103,7 +103,7 @@ im_whiteworld = cat(3,im_rggb(:,:,1)*(white_g/white_r), im_rggb(:,:,2), im_rggb(
 - white world automatic white balancing 이 더 좋다 판단
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P4.PNG' width="500px">
+  <img src='./image/P4.PNG' width="500px">
 </p>
 
 
@@ -121,7 +121,7 @@ im_di = cat(3, di_r, di_g, di_b);
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P5.png' width="300px"></p>
+  <img src='./image/P5.png' width="300px"></p>
 
 
 ### BRIGHTNESS ADJUSTMENT AND GAMMA CORRECTION
@@ -139,7 +139,7 @@ end
 ```
 
 <p align='center'>
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P6.png' width="300px"></p>
+  <img src='./image/P6.png' width="300px"></p>
 
 
 ### COMPRESSION
@@ -158,7 +158,7 @@ imwrite(c_non, 'A_95.jpeg', 'quality', 95);
 ```
 
 
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_png.PNG' width="800px"> <br/>
+  <img src='./image/P7_png.PNG' width="800px"> <br/>
   
   - white balancing(grey world, white world) 비교 <br/>
     - 원본 cr2 사진과 비교하였을 때, grey world white balancing보다 white world white balancing이 더 좋음을 볼 수 있다.<br/><br/>
@@ -168,7 +168,7 @@ imwrite(c_non, 'A_95.jpeg', 'quality', 95);
     - compression ratio = 0.18556 <br/>
   
 
-  <img src='https://github.com/eunjeeee/matlab/blob/gh-pages/image/P7_jpeg.PNG' width="800px"> <br/>
+  <img src='./image/P7_jpeg.PNG' width="800px"> <br/>
   - **changing the JPEG quality settings** <br/>
     - **quality 5 (222,342 byte)** : 0.0154<br/>
     - **quality 10 (273,577 byte)** : 0.0189<br/>
